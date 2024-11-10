@@ -6,7 +6,7 @@
 /*   By: slasfar <slasfar@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 15:05:07 by slasfar           #+#    #+#             */
-/*   Updated: 2024/11/06 23:33:10 by slasfar          ###   ########.fr       */
+/*   Updated: 2024/11/09 00:06:52 by slasfar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_printf(const char *str, ...)
 	int		i;
 	va_list	args;
 
+	if (!str)
+		return (-1);
 	va_start(args, str);
 	i = 0;
 	counter = 0;
